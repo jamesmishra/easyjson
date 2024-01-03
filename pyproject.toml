@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "easyjson"
+version = "0.1.0"
+description = ""
+authors = ["James Mishra <james.mishra@neocrym.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.11"
+isort = "^5.13.2"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.isort]
+profile = "hug"
+src_paths = ["easyjson", "tests"]
